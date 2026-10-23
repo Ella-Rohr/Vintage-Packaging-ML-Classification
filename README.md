@@ -2,15 +2,15 @@
 
 ## Project Description:
 
-### Overview
+### Overview:
 
 How can we make packaging more sustainable? This is a common question in today's world, and many people would tell you the solution is innovation whether that be through biodegradable plastics or training worms to eat styrofoam. These people are looking to the future, but what if the key to our sustainability issues can be found in the past? Humanity has thrived without plastics up until the industrial era. Maybe the question we need to ask is not how can we make plastic more environmentally friendly, rather, how can we switch back to the plastic free market that we once had? Was the past more sustainable? This project will analyze images from vintage grocery stores to do two things. Firstly we will analyze if the past was actually more sustainable, and two how we can implement these practices in today's world. How can we learn from the past to improve our sustainability today? What was common sustainable packaging during the pre-industrial era, and has since been lost in favor of plastics?
 
-### Research question
+### Research question:
 
 Can machine learning identify the materials used in historical images of grocery stores and markets, and what information about sustainable packaging can we take away from the past to improve our future?
 
-### Datasets
+### Datasets:
 
 1. Vintage Grocery Store (VGS) dataset: 50 hand-labeled historical grocery store images (3186 annotations) with 9 classes: glass, metal, paper, plastic, wood, wicker, linen, ceramic, mesh. Available on Roboflow (Link can be found below).
 2. Modern Packaging (MP) dataset: 1491 images of modern packaging (1491 annotations) converted to greyscale and enhanced exposure to mimic historical images. 4 classes: glass, metal, paper, plastic. Available on Roboflow (Link can be found below).
@@ -26,13 +26,13 @@ Experiment 3. Transfer learning with YOLOv12 w/Pytorch using only MP dataset for
 Experiment 4. (Not yet completed) Transfer learning with YOLOv12 w/Pytorch using both VGS and MP dataset for fine tuning.
 
 
-### Key findings
+### Key findings:
 
 Packaging classification on historical images is extremely difficult even with newer machine learning models. Due to the exposure and greyscale of most historical images, it is hard for the machine to differentiate metal and glass as the only differences are in shape. This is doable however, with a more expansive dataset the accuracy will improve.
 
 Using the modern dataset is not a great solution to the previous issue of a smaller dataset. Due to the large number of plastic packaging in most datasets it creates a bias in the machine, this can be seen in VGS3w_YOLOv11. 
 
-### Tools used
+### Tools used:
 
 - YOLOv11 and YOLOv5 via Ultralytics
 - Roboflow for labeling and dataset managment
